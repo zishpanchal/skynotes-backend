@@ -12,6 +12,7 @@ app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes', require('./routes/notes'))
 
 const port = process.env.REACT_APP_PORT;
-app.listen(port, () => {
+const host = '0.0.0.0';
+app.listen(port,host, () => {
   console.log(`SkyNotes listening on port ${port}`)
 })
