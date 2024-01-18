@@ -1,5 +1,5 @@
 {
-  "name": "SkyNotes-backend",
+  "name": "skyotes-backend",
   "version": "1.0.0",
   "description": "SkyNotes - Your notebook on the cloud",
   "main": "index.js",
