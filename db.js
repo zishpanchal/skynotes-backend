@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const mongoURI = 'mongodb://localhost:27017/inotebook'
+const mongoURI = process.env.REACT_APP_MONGO_DB_URI
 
 const connectToMongo = ()=>{
-    mongoose.connect(mongoURI).then(()=>console.log("Connected to mongo")).catch((e)=>console.log(e.message))
+    // console.log(mongoURI)
+    mongoose.connect(mongoURI).then(()=>console.log("Connected to mongo Atlas")).catch((e)=>console.log(e.message))
 }
 
 module.exports = connectToMongo;
